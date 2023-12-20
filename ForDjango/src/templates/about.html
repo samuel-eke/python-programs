@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{%block content%}
+<body>
+    
+    <div>
+        <p>
+            <h2>About</h2>
+            We have a versetile inclusive workforce at our establishment, located at {{street}}
+            <br>One of our foremost patrons is {{my_name}}
+        </p>
+
+    </div>
+    {%include 'profile.html'%} <!--The include will contents of profile.htnl. note, 
+        positioning matters -->
+</body>
+{%endblock%}
+</html>

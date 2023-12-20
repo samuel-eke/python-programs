@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django HTML Templating</title>
+</head>
+<body bgcolor="#7FFFD4">
+    
+    <navbar>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Contacts</li>
+            <li>About</li>
+            <li>Products</li>
+        </ul>
+    </navbar>
+    {%block content%}
+    <div>
+    <h1>HTML Templating</h1>
+    <p>This is a django html templating illustration</p>
+    <img src="./images/world.jpg" alt="this contains an image" width="300" height="300">
+    </div>
+    <div>
+        <p>I will collect data from users <br>
+            Username <input type="text" name="a_name" id="a_name">  </br>
+            Your password<input type="password">  </br>
+            I certify the above to be true <input type="checkbox">  <br>
+            <input type="button" value="Submit">  <br>
+        </p>
+    </div>
+    {% endblock %}
+   
+
+
+</body>
+</html>
